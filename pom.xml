@@ -50,19 +50,6 @@
             <version>${swagger-annotations-version}</version>
         </dependency>
 
-        <!-- Joda time: if you use it -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-joda</artifactId>
-            <version>${jackson-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>${jodatime-version}</version>
-        </dependency>
-
-
     </dependencies>
 
     <build>
@@ -94,8 +81,10 @@
 
                             <!-- pass any necessary config options -->
                             <configOptions>
-                                <dateLibrary>joda</dateLibrary>
                                 <interfaceOnly>true</interfaceOnly>
+                                <delegatePattern>true</delegatePattern>
+                                <hideGenerationTimestamp>true</hideGenerationTimestamp>
+                                <java8>true</java8>
 
                                 <sourceFolder>/</sourceFolder>
                             </configOptions>

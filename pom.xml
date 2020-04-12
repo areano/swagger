@@ -88,6 +88,7 @@
                             <output>src/main/java</output>
                             <apiPackage>com.example.demo.swagger.handler</apiPackage>
                             <modelPackage>com.example.demo.swagger.model</modelPackage>
+                            <generateSupportingFiles>false</generateSupportingFiles>
 
                             <language>spring</language>
 
